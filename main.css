@@ -1,0 +1,59 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+/*
+.split {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    padding-top: 20px;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 100%;
+}
+*/
+
+.left {
+    background: url(airline.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: absolute;
+    left: 0px;
+
+    width: 50%;
+    height: 100%;
+}
+
+.right {
+    background-color: rgba(119, 106, 18, 0.73);
+
+    position: absolute;
+    right: 0px;
+
+    width: 50%;
+    height: 100%;
+}
+
