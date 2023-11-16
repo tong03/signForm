@@ -13,43 +13,48 @@
         </div>
     </div>
     <div class="split right">
-        <p>This is not a real online service!</p>
-        <form>
-            <div>
-                <label for="fName">First Name</label>
-                <input type="text" id="fName" name="firstName">
+        <p>Save money on air travels today!</p>
+        <form class="mForm">
+            <div class="row1">
+                <div class="group1">
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" name="firstName" placeholder="First Name">
+                </div>
+
+                <div class="group2">
+                    <label for="lName">Last Name</label>
+                    <input type="text" id="lName" name="lastName" placeholder="Last Name">
+                </div>
             </div>
 
-            <div>
-                <label for="lName">Last Name</label>
-                <input type="text" id="lName" name="lastName">
+            <div class="row2">
+                <div class="group3">
+                    <label for="mail">Email</label>
+                    <input type="text" id="mail" name="email" placeholder="Email">
+                </div>
+
+                <div class="group4">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                </div>
             </div>
 
-            <div>
-                <label for="mail">Email</label>
-                <input type="text" id="mail" name="email">
-            </div>
+            <div class="row3">
+                <div class="group5">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass" placeholder="Password">
+                </div>
 
-            <div>
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-
-            <div>
-                <label for="pass">Password</label>
-                <input type="password" id="pass" name="pass">
-            </div>
-
-            <div>
-                <label for="cpass">Confirm Password</label>
-                <input type="password" id="cpass" name="cpass">
+                <div class="group6">
+                    <label for="cpass">Confirm Password</label>
+                    <input type="password" id="cpass" name="cpass" placeholder="Confirm Password">
+                </div>
             </div>
         </form>
-        <button>Create account</button>
-        <div>
-            <label>Already have an account?</label>
-            <input type="url">
-            <span>Log in</span>
+        
+        <div class="account">
+            <button class="create">Create account</button>
+            <label>Already have an account? <span class="login">Log in</span></label>
         </div>
     </div>
 </body>

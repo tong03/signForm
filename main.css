@@ -48,12 +48,71 @@ body {
 }
 
 .right {
-    background-color: rgba(119, 106, 18, 0.73);
-
+    background-color: rgba(114, 92, 38, 0.643);
     position: absolute;
     right: 0px;
 
     width: 50%;
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.login {
+    color:antiquewhite;
+    font-weight: bolder;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+
+.create {
+    width: 100%;
+    font-size: large;
+
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.create:hover {
+    opacity: 70%;
+}
+
+.mForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    border: 1px solid black;
+    height: 200px;
+    width: 80%;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+.group1, .group2, .group3,
+.group4, .group5, .group6 {
+    display:flex;
+    flex-direction: column;
+
+    border: 1px solid black;  
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;  
 }
 
