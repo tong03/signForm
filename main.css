@@ -3,37 +3,6 @@ body {
     margin: 0;
     height: 100vh;
 }
-/*
-.split {
-    position: fixed;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    padding-top: 20px;
-    overflow-x: hidden;
-    z-index: 1;
-}
-
-.left {
-    left: 0;
-}
-
-.right {
-    right: 0;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.centered img {
-    width: 100%;
-}
-*/
 
 .left {
     background: url(airline.jpg);
@@ -48,7 +17,7 @@ body {
 }
 
 .right {
-    background-color: rgba(114, 92, 38, 0.643);
+    background-color: grey;
     position: absolute;
     right: 0px;
 
@@ -57,9 +26,40 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
     justify-content: space-evenly;
 
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0; margin: 0;
+  
+  
+  height: 25px;
+  border: 1px solid black;
+}
+
+input{
+    border: 0px;
+    border-bottom: 2px solid black;
+    background-color: grey; 
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blanchedalmond;
+    transition-delay: 0.05s;
+}
+
+input::placeholder{
+    color:blanchedalmond;
+}
+
+input:focus::placeholder{
+    color: transparent;
 }
 
 .login {
@@ -74,14 +74,21 @@ body {
     gap: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: small;
+
+
+    position: relative;
+    left: 50px;
 }
 
 .create {
-    width: 100%;
-    font-size: large;
+    display: flex;
+    font-size: 20px;
 
-    border-radius: 10px;
-    padding: 5px 10px;
+    border-radius: 5px;
+    padding: 15px 30px;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .create:hover {
@@ -96,7 +103,11 @@ body {
 
     border: 1px solid black;
     height: 200px;
-    width: 80%;
+    width: 70%;
+
+    position: relative;
+    left: 50px;
+
 }
 
 .row1, .row2, .row3 {
@@ -110,9 +121,28 @@ body {
 .group4, .group5, .group6 {
     display:flex;
     flex-direction: column;
-
+    /*
     border: 1px solid black;  
+    */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: small;  
 }
 
+.banner {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    
+    color: white;
+
+    width: 400px;
+    margin: 0;
+    position: relative;
+    left: 50px;
+}
+
+.banner.initial{
+    font-size: 20px;
+    margin-bottom: 0;
+    top: 20px;
+}
