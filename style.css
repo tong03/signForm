@@ -27,8 +27,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
 
+
+    gap: 40px;
 }
 
 button,
@@ -46,6 +48,8 @@ input{
     border: 0px;
     border-bottom: 2px solid black;
     background-color: grey; 
+
+    font-size:larger;
 }
 
 input:focus {
@@ -70,14 +74,18 @@ input:focus::placeholder{
 .account {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     
     gap: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: small;
 
-
+    width: max-content;
+    margin-top: 20px;
+    /*
     position: relative;
     left: 50px;
+    */
 }
 
 .create {
@@ -89,6 +97,8 @@ input:focus::placeholder{
 
     align-items: center;
     justify-content: center;
+
+    width: auto;
 }
 
 .create:hover {
@@ -98,16 +108,13 @@ input:focus::placeholder{
 .mForm {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 
-    border: 1px solid black;
-    height: 200px;
+    height: 300px;
     width: 70%;
 
     position: relative;
     left: 50px;
-
 }
 
 .row1, .row2, .row3 {
@@ -133,7 +140,7 @@ input:focus::placeholder{
     font-weight: bold;
     font-size: 25px;
     
-    color: white;
+    color: blanchedalmond;
 
     width: 400px;
     margin: 0;
@@ -145,4 +152,47 @@ input:focus::placeholder{
     font-size: 20px;
     margin-bottom: 0;
     top: 20px;
+}
+
+span.test {
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .4s;
+
+    color: blanchedalmond;
+}
+
+input:focus ~ span,
+input:valid ~ span{
+    font-size: 10px;
+    transform: translateX(5px) translateY(-12px);
+    font-size: 0.8em;
+    padding: 0 6px;
+    color: var(--cyny-green);
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 2px;
+}
+input:focus,
+input:focus-visible {
+    border: 1px solid  blanchedalmond;
+    box-shadow: 0 0 5px rgb(0,0,0,.3);
+    outline: none;
+}
+
+input:valid {
+    border: 1px solid blanchedalmond;  
+}
+
+span.test:not(.btm-text-highlighted) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3px;
+    pointer-events: none;
+}
+
+.group1, .group2 {
+    position: relative;
 }
